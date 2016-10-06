@@ -23,6 +23,10 @@ Port::Generator - pick some unused port
 
 =head1 DESCRIPTION
 
+This module is used to find a free port,
+by default in the range 49152 to 65535,
+but you can change the range of ports that will be checked.
+
 =head1 METHODS
 
 =head2 new(%attributes)

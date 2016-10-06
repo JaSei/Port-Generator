@@ -80,6 +80,12 @@ sub port {
     return;
 }
 
+=head1 SEE ALSO
+
+L<Net::EmptyPort> (part of the C<Test-TCP> distribution,
+provides a function C<empty_port>
+which does the same thing as the C<port> method in this module.
+
 =head1 LICENSE
 
 Copyright (C) Avast Software.

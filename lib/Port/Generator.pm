@@ -31,13 +31,13 @@ Port::Generator - pick some unused port
 
 =head4 min
 
-minimal range of ports
+lowest numbered port to consider
 
 default I<49152>
 
 =head4 max
 
-maximal range of ports
+highest numbered port to consider
 
 default I<65535>
 
@@ -55,11 +55,11 @@ default I<localhost>
 
 =head2 port()
 
-try find some unused port from C<min>-C<max> ports range
-
-each port is check for avialable
+Tries to find an unused port from C<min>-C<max> ports range,
+checking each port in turn until it finds an available one.
 
 =cut
+
 sub port {
     my ($self) = @_;
 

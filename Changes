@@ -1,6 +1,7 @@
 Revision history for Perl extension Port-Generator
 
 {{$NEXT}}
+    - Improved wording of documentation
 
 0.1.2 2016-10-06T15:03:50Z
     - fix SYNOPSIS

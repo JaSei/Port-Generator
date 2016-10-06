@@ -1,18 +1,53 @@
 # NAME
 
-Port::Generator - It's new $module
+Port::Generator - pick some unused port
 
 # SYNOPSIS
 
-    use Port::Generator;
+    my $port_gen = Port::Generator->new();
+    $port_gen->
 
 # DESCRIPTION
 
-Port::Generator is ...
+# METHODS
+
+## new(%attributes)
+
+### %attributes
+
+#### min
+
+minimal range of ports
+
+default _49152_
+
+#### max
+
+maximal range of ports
+
+default _65535_
+
+#### proto
+
+socket protocol
+
+default _tcp_
+
+#### addr
+
+local address
+
+default _localhost_
+
+## port()
+
+try find some unused port from `min`-`max` ports range
+
+each port is check for avialable
 
 # LICENSE
 
-Copyright (C) Jan Seidl.
+Copyright (C) Avast Software.
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.

@@ -2,7 +2,7 @@ package Port::Generator ;
 use strict;
 use warnings;
 
-our $VERSION = '0.1.1';
+our $VERSION = '0.1.2';
 
 use IO::Socket::INET;
 use Class::Tiny {
@@ -19,7 +19,7 @@ Port::Generator - pick some unused port
 =head1 SYNOPSIS
 
     my $port_gen = Port::Generator->new();
-    $port_gen->
+    $port_gen->port();
 
 =head1 DESCRIPTION
 
@@ -94,4 +94,3 @@ Jan Seidl E<lt>seidl@avast.comE<gt>
 =cut
 
 1;
-

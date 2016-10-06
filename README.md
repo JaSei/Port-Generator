@@ -6,7 +6,7 @@ Port::Generator - pick some unused port
 # SYNOPSIS
 
     my $port_gen = Port::Generator->new();
-    $port_gen->
+    $port_gen->port();
 
 # DESCRIPTION
 

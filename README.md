@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/JaSei/Port-Generator.svg?branch=master)](https://travis-ci.org/JaSei/Port-Generator)
 # NAME
 
 Port::Generator - pick some unused port

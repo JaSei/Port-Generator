@@ -2,7 +2,7 @@ package Port::Generator ;
 use strict;
 use warnings;
 
-our $VERSION = '0.1.0';
+our $VERSION = '0.1.1';
 
 use IO::Socket::INET;
 use Class::Tiny {

@@ -1,5 +1,5 @@
 name = "Port-Generator"
-# badges = ["travis"]
+badges = ["travis"]
 authority="cpan:JASEI"
 
 module_maker="ModuleBuildTiny"

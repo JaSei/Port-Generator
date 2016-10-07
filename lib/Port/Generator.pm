@@ -23,6 +23,10 @@ Port::Generator - pick some unused port
 
 =head1 DESCRIPTION
 
+This module is used to find a free port,
+by default in the range 49152 to 65535,
+but you can change the range of ports that will be checked.
+
 =head1 METHODS
 
 =head2 new(%attributes)
@@ -31,7 +35,7 @@ Port::Generator - pick some unused port
 
 =head4 min
 
-minimal range of ports
+lowest numbered port to consider
 
 default I<49152>
 
@@ -40,7 +44,7 @@ dynamic/random/configurable port.
 
 =head4 max
 
-maximal range of ports
+highest numbered port to consider
 
 default I<65535>
 
@@ -58,11 +62,11 @@ default I<localhost>
 
 =head2 port()
 
-try find some unused port from C<min>-C<max> ports range
-
-each port is check for avialable
+Tries to find an unused port from C<min>-C<max> ports range,
+checking each port in turn until it finds an available one.
 
 =cut
+
 sub port {
     my ($self) = @_;
 
@@ -82,6 +86,12 @@ sub port {
 
     return;
 }
+
+=head1 SEE ALSO
+
+L<Net::EmptyPort> (part of the C<Test-TCP> distribution,
+provides a function C<empty_port>
+which does the same thing as the C<port> method in this module.
 
 =head1 LICENSE
 

@@ -10,6 +10,10 @@ Port::Generator - pick some unused port
 
 # DESCRIPTION
 
+This module is used to find a free port,
+by default in the range 49152 to 65535,
+but you can change the range of ports that will be checked.
+
 # METHODS
 
 ## new(%attributes)
@@ -18,13 +22,16 @@ Port::Generator - pick some unused port
 
 #### min
 
-minimal range of ports
+lowest numbered port to consider
 
 default _49152_
 
+The range 49152-65535 is commonly used by applications that utilize a
+dynamic/random/configurable port.
+
 #### max
 
-maximal range of ports
+highest numbered port to consider
 
 default _65535_
 
@@ -42,9 +49,14 @@ default _localhost_
 
 ## port()
 
-try find some unused port from `min`-`max` ports range
+Tries to find an unused port from `min`-`max` ports range,
+checking each port in turn until it finds an available one.
 
-each port is check for avialable
+# SEE ALSO
+
+[Net::EmptyPort](https://metacpan.org/pod/Net::EmptyPort) (part of the `Test-TCP` distribution,
+provides a function `empty_port`
+which does the same thing as the `port` method in this module.
 
 # LICENSE
 

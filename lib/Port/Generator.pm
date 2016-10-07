@@ -35,6 +35,9 @@ minimal range of ports
 
 default I<49152>
 
+The range 49152-65535 is commonly used by applications that utilize a
+dynamic/random/configurable port.
+
 =head4 max
 
 maximal range of ports

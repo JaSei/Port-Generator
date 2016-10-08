@@ -57,16 +57,16 @@
    "release_status" : "unstable",
    "resources" : {
       "bugtracker" : {
-         "web" : "https://github.com/JaSei/Port-Generator/issues"
+         "web" : "https://github.com/JaSei/Port-Selector/issues"
       },
-      "homepage" : "https://github.com/JaSei/Port-Generator",
+      "homepage" : "https://github.com/JaSei/Port-Selector",
       "repository" : {
          "type" : "git",
-         "url" : "git://github.com/JaSei/Port-Generator.git",
-         "web" : "https://github.com/JaSei/Port-Generator"
+         "url" : "git://github.com/JaSei/Port-Selector.git",
+         "web" : "https://github.com/JaSei/Port-Selector"
       }
    },
-   "version" : "0.1.3",
+   "version" : "0.1.4",
    "x_authority" : "cpan:JASEI",
    "x_contributors" : [
       "Neil Bowers <neil@bowers.com>",

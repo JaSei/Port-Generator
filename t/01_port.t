@@ -3,11 +3,11 @@ use warnings;
 
 use Test::More tests => 5;
 
-use_ok('Port::Generator');
+use_ok('Port::Selector');
 
 subtest 'port is empty' => sub {
-    my $port_gen = Port::Generator->new(); 
-    my $port = $port_gen->port();
+    my $port_sel = Port::Selector->new(); 
+    my $port = $port_sel->port();
 
     my $sock = IO::Socket::INET->new(
         PeerAddr => 'localhost',
@@ -18,9 +18,9 @@ subtest 'port is empty' => sub {
 };
 
 subtest 'first port is used' => sub {
-    my $port_gen = Port::Generator->new();
+    my $port_sel = Port::Selector->new();
 
-    my $port1 = $port_gen->port();
+    my $port1 = $port_sel->port();
 
     my $sock_server = IO::Socket::INET->new(
         LocalAddr => 'localhost',
@@ -29,15 +29,15 @@ subtest 'first port is used' => sub {
 
     ok($sock_server, 'socket on port1 is started');
 
-    my $port2 = $port_gen->port();
+    my $port2 = $port_sel->port();
 
     ok($port1 != $port2, 'next call port give other port');
 };
 
 subtest 'first port is used' => sub {
-    my $port_gen = Port::Generator->new();
+    my $port_sel = Port::Selector->new();
 
-    my $port1 = $port_gen->port();
+    my $port1 = $port_sel->port();
 
     my $sock_server = IO::Socket::INET->new(
         LocalAddr => 'localhost',
@@ -46,17 +46,17 @@ subtest 'first port is used' => sub {
 
     ok($sock_server, 'socket on port1 is started');
 
-    my $port2 = $port_gen->port();
+    my $port2 = $port_sel->port();
 
     ok($port1 != $port2, 'next call port give other port');
 };
 
 subtest 'first port is used - udp' => sub {
-    my $port_gen = Port::Generator->new(
+    my $port_sel = Port::Selector->new(
         proto => 'udp'
     );
 
-    my $port1 = $port_gen->port();
+    my $port1 = $port_sel->port();
 
     my $sock_server = IO::Socket::INET->new(
         LocalAddr => 'localhost',
@@ -66,7 +66,7 @@ subtest 'first port is used - udp' => sub {
 
     ok($sock_server, 'socket on port1 is started');
 
-    my $port2 = $port_gen->port();
+    my $port2 = $port_sel->port();
 
     ok($port1 != $port2, 'next call port give other port');
 };

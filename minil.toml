@@ -1,4 +1,4 @@
-name = "Port-Generator"
+name = "Port-Selector"
 badges = ["travis"]
 authority="cpan:JASEI"
 

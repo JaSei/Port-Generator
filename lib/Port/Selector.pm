@@ -1,4 +1,4 @@
-package Port::Generator ;
+package Port::Selector;
 use strict;
 use warnings;
 
@@ -14,12 +14,12 @@ use Class::Tiny {
 
 =head1 NAME
 
-Port::Generator - pick some unused port
+Port::Selector - pick some unused port
 
 =head1 SYNOPSIS
 
-    my $port_gen = Port::Generator->new();
-    $port_gen->port();
+    my $port_sel = Port::Selector->new();
+    $port_sel->port();
 
 =head1 DESCRIPTION
 

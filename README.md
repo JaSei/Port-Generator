@@ -1,12 +1,12 @@
 [![Build Status](https://travis-ci.org/JaSei/Port-Generator.svg?branch=master)](https://travis-ci.org/JaSei/Port-Generator)
 # NAME
 
-Port::Generator - pick some unused port
+Port::Selector - pick some unused port
 
 # SYNOPSIS
 
-    my $port_gen = Port::Generator->new();
-    $port_gen->port();
+    my $port_sel = Port::Selector->new();
+    $port_sel->port();
 
 # DESCRIPTION
 

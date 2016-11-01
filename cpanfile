@@ -8,4 +8,5 @@ on 'test' => sub {
 on 'develop' => sub {
     requires 'Module::Build::Tiny';
     requires 'Minilla';
+    requires 'Version::Next';
 };

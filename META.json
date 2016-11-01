@@ -4,7 +4,7 @@
       "Jan Seidl <seidl@avast.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Minilla/v3.0.4, CPAN::Meta::Converter version 2.150005",
+   "generated_by" : "Minilla/v3.0.4, CPAN::Meta::Converter version 2.150001",
    "license" : [
       "perl_5"
    ],
@@ -66,12 +66,11 @@
          "web" : "https://github.com/JaSei/Port-Selector"
       }
    },
-   "version" : "0.1.4",
+   "version" : "0.1.5",
    "x_authority" : "cpan:JASEI",
    "x_contributors" : [
       "Neil Bowers <neil@bowers.com>",
       "perlancar (@netbook-zenbook-ux305) <perlancar@gmail.com>",
       "Jan Seidl <janseidl@volny.cz>"
-   ],
-   "x_serialization_backend" : "JSON::PP version 2.27300"
+   ]
 }

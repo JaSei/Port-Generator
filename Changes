@@ -1,6 +1,7 @@
 Revision history for Perl extension Port-Selector
 
 {{$NEXT}}
+    - Fix on windows
 
 0.1.4 2016-10-08T12:40:18Z
     - Rename distribution from Port::Generator to Port::Selector

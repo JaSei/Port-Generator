@@ -2,7 +2,7 @@ package Port::Selector;
 use strict;
 use warnings;
 
-our $VERSION = '0.1.4';
+our $VERSION = '0.1.5';
 
 use IO::Socket::INET;
 use Class::Tiny {

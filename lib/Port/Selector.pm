@@ -2,7 +2,7 @@ package Port::Selector;
 use strict;
 use warnings;
 
-our $VERSION = '0.1.5';
+our $VERSION = '0.1.6';
 
 use IO::Socket::INET;
 use Class::Tiny {
@@ -75,6 +75,7 @@ sub port {
             LocalAddr => $self->addr,
             LocalPort => $port,
             Proto     => $self->proto,
+            ReuseAddr => $^O ne 'MSWin32',
         );
 
         if ($sock) {
